@@ -20,10 +20,11 @@ export class ItemListComponent implements OnInit {
   }
 
   activateItem($event: MouseEvent, item: InnerItem) {
-    if ($event.type === 'mouseover') {
-      item.setStatus('active');
-    } else {
-      item.setStatus('');
-    }
+    // if ($event.type === 'mouseover') {
+    //   item.setStatus('active');
+    // } else {
+    //   item.setStatus('');
+    // }
+    $event.type === 'mouseover' ? item.setStatus('active') : item.setStatus('');
   }
 }
