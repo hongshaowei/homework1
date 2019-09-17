@@ -1,3 +1,7 @@
-<div *ngFor="let innerItem of itemList; let i = index" (mouseover)="activateItem($event, innerItem)" (mouseout)="activateItem($event, innerItem)">
-    <div [ngClass]="innerItem.getStatus()">{{innerItem.getContent()}}</div>
+<div
+  *ngFor="let innerItem of itemList; let i = index"
+  (mouseover)="activateItem($event, innerItem)"
+  (mouseout)="activateItem($event, innerItem)"
+>
+  <div [ngClass]="innerItem.getStatus()">{{ innerItem.getContent() }}</div>
 </div>
